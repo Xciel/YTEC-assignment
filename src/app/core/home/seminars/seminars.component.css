@@ -1,0 +1,12 @@
+.seminar-card {
+    max-width: 350px;
+    margin-left: -50%
+  }
+  
+  .example-header-image {
+    background-size: cover;
+  }
+
+button#faved {
+    position: relative;
+}

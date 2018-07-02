@@ -1,0 +1,181 @@
+body, html {
+    font-family: 'Roboto' sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+img#logo {
+    margin-bottom: -0.4em;
+    margin-left: -0.9em;
+    width: 30rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: .2em;
+}
+
+p#subtitle {
+    font-size: 1.4em;
+    color: #ffffff;
+    opacity: 0.4;
+    margin-bottom: 1.3em;
+}
+
+button#join {
+    justify-content: space-around;
+    
+}
+
+button#login {
+    justify-content: space-around;
+    margin: 8px;
+}
+
+#Monitor {
+    width: 110%;
+    margin-top: 15rem;
+    animation: monitorIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.icons {
+    position: absolute;
+    width: 4%;
+}
+
+#BrainIcon {
+    margin-top: 10%;
+    margin-left: 10.3%;
+    animation: icons .5s ease-in-out 1s forwards;
+    opacity: 0;
+    z-index: 2;
+}
+
+#CertIcon {
+    margin-top: 32%;
+    margin-left: 16%;
+    width: 5%;
+    animation: icons .5s ease-in-out 2.7s forwards;
+    opacity: 0;
+    z-index: 2;
+}
+
+#CogIcon {
+    margin-top: 3%;
+    margin-left: -1.6%;
+    animation: icons .5s ease-in-out .5s forwards;
+    opacity: 0;
+    z-index: 2;
+    width: 4.5%
+}
+
+#ChipIcon {
+    margin-top: 18%;
+    margin-left: 14.1%;
+    width: 9%;
+    animation: icons .5s ease-in-out 1.5s forwards;
+    opacity: 0;
+    z-index: 2;
+}
+
+#Lines {
+    margin-top: 5%;
+    margin-left: -1.5%;
+    width: 20%;
+    animation: icons .5s ease-in-out 2s forwards;
+    opacity: 0;
+    z-index: 1;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: .5fr, 1fr, 1fr, .5fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+        ". left right .";
+    height: 100%;
+}
+
+#inner {
+    grid-area: left;
+    align-self: center;
+    justify-self: center;
+    margin-top: 15rem;
+}
+
+#illustration {
+    grid-area: right;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+}
+
+@keyframes monitorIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes icons {
+
+      0%{
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        transform: scale(.3);
+      }
+      50%{
+        opacity: 1;
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+      }
+      70%{
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+      100%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+      }
+    
+}
+
+
+
+
+.bgOne, .bgTwo, .bgThree {
+    width: 99.5%;
+    height: 100%;
+    position: absolute;
+}
+
+.bgOne {
+    -webkit-clip-path: polygon(100% 78%, 100% 87%, 100% 100%, 78% 100%);
+    clip-path: polygon(100% 78%, 100% 87%, 100% 100%, 78% 100%);
+    z-index: -1;
+    background-color: #585858;
+}
+
+.bgTwo {
+    -webkit-clip-path: polygon(33% 100%, 100% 58%, 100% 72%, 54% 100%);
+    clip-path: polygon(50% 100%, 100% 50%, 100% 65%, 65% 100%);
+    z-index: -2;
+    background-color: #484848;
+    opacity: 60%;
+}
+
+.bgThree {
+    -webkit-clip-path: polygon(18% 100%, 100% 33%, 100% 47%, 35% 100%);
+    clip-path: polygon(18% 100%, 100% 23%, 100% 37%, 35% 100%);
+    z-index: -3;
+    background-color: #404040;
+    opacity: 40%;
+}

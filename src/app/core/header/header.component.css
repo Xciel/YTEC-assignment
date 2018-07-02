@@ -1,0 +1,28 @@
+mat-toolbar {
+    display: flex;
+}
+
+.spacer {
+    flex: 1 1 1 ;
+}
+
+#logo {
+  width: 30%;
+  margin-top: 1.5%;
+  margin-left: 45%;
+}
+
+#avatarIcon {
+    width: 3%;
+    margin-top: 0;
+    margin-left: 20%;
+    cursor: pointer;
+}
+
+.rightAligned {
+    margin-left: 100%;
+}
+
+#moreIcon {
+    cursor: pointer;
+}

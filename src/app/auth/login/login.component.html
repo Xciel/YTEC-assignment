@@ -1,0 +1,50 @@
+<div class="mat-typography">
+    <div class="container" >
+        <mat-card class="login-card" role="group">
+            <mat-card-header>
+              <mat-card-title>LOGIN</mat-card-title> 
+              <mat-card-subtitle>Seminars voor het kennen van jouw auto</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-actions>
+             <form (ngSubmit)="onLogin(f)" #f="ngForm">
+              <mat-form-field class="emailForm" color="accent">
+                <mat-label><mat-icon>alternate_email</mat-icon> Email </mat-label>
+                  <input 
+                    type="email"
+                    id="email"
+                    name="email"
+                    matInput placeholder="Enter your email" 
+                    ngModel 
+                    required>
+                  <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+                <br>
+                <mat-form-field class="passwordForm" color="accent">
+                  <mat-label><mat-icon>lock_open</mat-icon> Password </mat-label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    matInput placeholder="Enter your password"
+                    [type]="hide ? 'password' : 'text'"
+                    ngModel
+                    class="align-right">
+                  <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                </mat-form-field>
+                  <mat-card-actions>
+                      <mat-checkbox>Onthoud mij!</mat-checkbox>
+                      <br>
+                      <button mat-raised-button type="submit" id="loginButton" routerLink="/home">LOGIN</button>
+                      <button mat-button color="accent" id="emailnotgetButton">EMAIL NIET GEKREGEN?</button>
+                  </mat-card-actions>
+             </form>
+            </mat-card-actions>
+            <mat-card-footer>
+
+            </mat-card-footer>
+          </mat-card> 
+      </div>
+      <div class="stripes">
+          <img src="../../../assets/background top lines.svg" class="stripes">
+        </div>     
+    </div>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 439 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #80cbc4;
+        font-size: 35px;
+        font-family: Roboto-CondensedItalic, Roboto;
+        font-style: italic;
+      }
+
+      .cls-2 {
+        filter: url(#SEMICAR);
+      }
+    </style>
+    <filter id="SEMICAR" x="0" y="0" width="439" height="100" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <text id="SEMICAR-2" data-name="SEMICAR" class="cls-1" transform="translate(9 6)"><tspan x="0" y="33">SEMICAR</tspan></text>
+  </g>
+</svg>
